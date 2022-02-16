@@ -28,7 +28,7 @@ type RSA struct{}
 // Sign is a wrapper for Go crypto/rsa
 func (*RSA) Sign(input map[string]interface{}, pk string) string {
 	_, ss, err := buildDataStr(input, pk)
-	fmt.Println(ss)
+	//fmt.Println(ss)
 	if err != nil {
 		return "error"
 	}
